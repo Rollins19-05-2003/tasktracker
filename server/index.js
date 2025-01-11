@@ -8,7 +8,8 @@ const mongoose = require("mongoose");
 
 const app = express();
 // ~~~~~~~~~~~~~~ MIDDLEWARE ~~~~~~~~~~~~~~~~
-app.use(cors({origin: process.env.FRONTEND_URL}));
+app.use(cors({origin: process.env.FRONTEND_URL, methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true,}));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
