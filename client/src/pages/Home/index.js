@@ -41,9 +41,9 @@ const Home = () => {
         </button>
       </div>
       <div>
-        <p className="text-dark-2">
+        {tasks.length !== 0 && <p className="text-dark-2">
           Here are your tasks for today. Best of luck!
-        </p>
+        </p>}
         <TasksGrid tasks={tasks} loading={loading} />
       </div>
     </div>

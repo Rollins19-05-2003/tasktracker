@@ -38,12 +38,12 @@ This repository hosts the **Task Manager Web Application**, a full-stack applica
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Authentication**: JSON Web Tokens (JWT)
-- **Hosting**: Frontend on Vercel, Backend on Render, Database on MongoDB Atlas
+- **Hosting**: Frontend & Backend on Vercel, Database on MongoDB Atlas
 
 ---
 ## Live Demo
 
-Access the live application here: [Task Manager Live Demo](https://example.com)
+Access the live application here: [Task Manager Live Demo](https://tasktracker-blush.vercel.app/)
 
 ---
 
@@ -53,7 +53,6 @@ Access the live application here: [Task Manager Live Demo](https://example.com)
 - Node.js (14.17.0 or higher)
 - MongoDB (4.4.3 or higher)
 - npm (6.14.13 or higher)
-- yarn (1.22.10 or higher)
 - A code editor or IDE of your choice
 - A MongoDB Atlas account for database hosting
 - A vercel account for hosting
@@ -72,11 +71,11 @@ To run this application locally, follow these steps:
    ```bash
    # Install frontend dependencies
    cd client
-   npm install # or yarn install
+   npm install 
 
    # Install backend dependencies
    cd ../server
-   npm install # or yarn install
+   npm install
    ```
 
 4. Configure the environment variables for the backend:
@@ -97,10 +96,10 @@ To run this application locally, follow these steps:
 
    ```bash
    # In the backend directory
-   npm start # or yarn start
+   npm start 
 
    # In the frontend directory
-   npm start # or yarn start
+   npm start 
    ```
 
 7. The application should now be running. Access it in your web browser at `http://localhost:3000`
@@ -140,11 +139,14 @@ To successfully complete this project, I completed the following requirements:
 
 ## Screenshots
 ### Login Page
-
+![Login Screenshot](./assets/login.jpg "Screenshot of the Login Page")
 
 ### Task Management Dashboard
+![Dashboard Screenshot](./assets/dashboard.jpg "Screenshot of the Dashboard Page")
 
+### Add Task Form
+![Add Task Screenshot](./assets/task-form.jpg "Screenshot of the Add Task Form")
 ---
 
 ## Demo Video
-Watch a 2-minute walkthrough of the application: Demo Video
+Watch a 2-minute walkthrough of the application: [Demo Video](https://www.awesomescreenshot.com/video/35439248?key=98822e935a55a25b5bc44d622ae86d08)

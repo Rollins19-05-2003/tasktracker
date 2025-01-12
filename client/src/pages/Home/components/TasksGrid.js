@@ -19,7 +19,12 @@ const TaskGrid = ({ tasks, loading }) => {
                 <p className="card-text">{task.description}</p>
               </div>
               <div className="card-footer flex gap-2">
-                <span className="small-tab">
+                <span
+                  className="small-tab"
+                  style={{
+                    backgroundColor: task.status ? "lightgreen" : "yellow",
+                  }}
+                >
                   {task.status ? "Completed" : "Pending"} task
                 </span>
                 <span className="small-tab">
