@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 
 const app = express();
 // ~~~~~~~~~~~~~~ MIDDLEWARE ~~~~~~~~~~~~~~~~
-app.use(cors({origin: process.env.FRONTEND_URL, methods: ['GET', 'POST', 'PUT', 'DELETE'],
+app.use(cors({origin: "https://tasktracker-blush.vercel.app" || process.env.FRONTEND_URL, methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,}));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
