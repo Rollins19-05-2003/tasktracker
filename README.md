@@ -9,15 +9,10 @@ This repository hosts the **Task Manager Web Application**, a full-stack applica
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-  - [Environment Variables](#environment-variables)
-  - [Running the Application](#running-the-application)
 - [API Documentation](#api-documentation)
-- [Testing](#testing)
 - [Code Structure](#code-structure)
-- [Security Measures](#security-measures)
 - [Screenshots](#screenshots)
 - [Demo Video](#demo-video)
-- [License](#license)
 
 ---
 
@@ -137,6 +132,83 @@ To successfully complete this project, I completed the following requirements:
 - Users should be able to register, log in, and log out.
 - Only logged-in users can create, update, or delete tasks.
 
+## Code Structure
+```
+📦 
+├─ .gitignore
+├─ README.md
+├─ assets
+│  ├─ dashboard.jpg
+│  ├─ login.jpg
+│  └─ task-form.jpg
+├─ client
+│  ├─ README.md
+│  ├─ package-lock.json
+│  ├─ package.json
+│  ├─ public
+│  │  ├─ favicon.ico
+│  │  ├─ index.html
+│  │  ├─ logo192.png
+│  │  ├─ logo512.png
+│  │  ├─ manifest.json
+│  │  └─ robots.txt
+│  ├─ src
+│  │  ├─ App.css
+│  │  ├─ App.js
+│  │  ├─ App.test.js
+│  │  ├─ components
+│  │  │  ├─ common
+│  │  │  │  └─ MUI-themed
+│  │  │  │     ├─ Checkbox.js
+│  │  │  │     ├─ Input.js
+│  │  │  │     ├─ MUI-themed.css
+│  │  │  │     ├─ Select.js
+│  │  │  │     └─ TextArea.js
+│  │  │  ├─ layout
+│  │  │  │  ├─ Header.js
+│  │  │  │  ├─ index.js
+│  │  │  │  └─ layout.css
+│  │  │  └─ utils
+│  │  │     ├─ ProtectedRoute.js
+│  │  │     ├─ api.js
+│  │  │     └─ dateFormatter.js
+│  │  ├─ index.css
+│  │  ├─ index.js
+│  │  ├─ logo.svg
+│  │  ├─ pages
+│  │  │  ├─ EditTask
+│  │  │  │  └─ index.js
+│  │  │  ├─ Entry
+│  │  │  │  ├─ Entry.css
+│  │  │  │  └─ index.js
+│  │  │  ├─ Home
+│  │  │  │  ├─ components
+│  │  │  │  │  └─ TasksGrid.js
+│  │  │  │  └─ index.js
+│  │  │  ├─ NewTask
+│  │  │  │  └─ index.js
+│  │  │  └─ Task
+│  │  │     └─ index.js
+│  │  ├─ reportWebVitals.js
+│  │  └─ setupTests.js
+│  └─ tailwind.config.js
+├─ package-lock.json
+├─ package.json
+└─ server
+   ├─ index.js
+   ├─ models
+   │  ├─ refresh.js
+   │  ├─ tasks.js
+   │  └─ users.js
+   ├─ package-lock.json
+   ├─ package.json
+   ├─ routes
+   │  ├─ auth.js
+   │  └─ tasks.js
+   ├─ utils
+   │  └─ index.js
+   └─ vercel.json
+```
 ## Screenshots
 ### Login Page
 ![Login Screenshot](./assets/login.jpg "Screenshot of the Login Page")
